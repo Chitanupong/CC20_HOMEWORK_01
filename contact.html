@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <hr>
+  <nav>
+    <a href="./index.html">HOME</a>
+    <a href="./education.html">Education</a>
+    <a href="./work.html">Work Experience</a>
+    <a href="#">Contact Me</a>
+  </nav>
+  <hr>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    form {
+      border: 1px solid lightgray;
+      padding: 50px;
+      width: 600px;
+      border-radius: 8px;
+    }
+
+    input, select, textarea{
+      width: 100%;
+      margin-bottom: 12px;
+      font-size: 20 px;
+      padding: 8px;
+      border: 1px solid silver;
+      border-radius: 4px;
+    }
+
+    input[type=submit] {
+      background-color: salmon;
+      border: none;
+    }
+
+    label {
+      width: 100%;
+      color: rgb(62, 84, 111);
+    }
+
+    .w-fit {
+      width: auto;
+    }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <h1>Contact Me</h1>
+  <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <p>Enter your info..</p>
+
+    <label>
+      <input type="text" placeholder="Your Name" name="nickname">
+      <br />
+      <label for="email">Emall :</label>
+      <br />
+      <input type="email" placeholder="Your Email" id="email">
+
+      
+<label for="gender">Gender :</label>
+      <Select name="gender" id="gender">
+<option disabled selected>Select..</option>
+<option>Male</option>
+<option>FeMale</option>
+<option>Others</option>
+      </Select>
+      <label for="notes">
+        <textarea name="notes" id="notes" rows="4">
+
+        </textarea>
+      </label>
+   
+      <!-- <label>E-mail :
+        <input type="email">
+      </label> -->
+
+
+
+
+      <input type="submit" value="Confirm">
+      <input type="reset" value="Clear">
+
+    </label>
+  </form>
+</body>
+
+</html>
